@@ -7,7 +7,7 @@ client = Anthropic(
     base_url=os.environ["ANTHROPIC_BASE_URL"],
     api_key=os.environ["ANTHROPIC_API_KEY"],
 )
-MODEL = os.environ.get("ANTHROPIC_MODEL", "kimi-k3.1-pro-abliterated")
+MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
 
 
 def reply(prompt: str) -> str:
